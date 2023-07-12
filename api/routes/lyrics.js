@@ -2,19 +2,25 @@ var express = require('express');
 var router = express.Router();
 var lyrics = require('genius-lyrics-api');
 
-function splitLyrics(rawLyrics) {
-    var lyricSections = [];
+function splitToWords(verse) {
+    let tempArray = verse.split(" ");
+    tempArray = tempArray.filter(function(lyric) {
+        return lyric !== "";
+    });
+    return tempArray;
+}
+
+function splitSections(rawLyrics) {
+    var sectionTitles = [];
+    var boxTexts = [];
     var tempSectionHeader = "";
     var tempSectionBody = "";
     var pointAtHeader = false;
     [...rawLyrics].forEach(function(char) {
         if(char === '['){
             if(tempSectionHeader) {
-                var tempLyricObject = {
-                    sectionHeader: tempSectionHeader,
-                    sectionBody: tempSectionBody,
-                }
-                lyricSections.push(tempLyricObject);
+                sectionTitles.push(tempSectionHeader);
+                boxTexts.push(splitToWords(tempSectionBody));
                 tempSectionHeader = "";
                 tempSectionBody = "";
             }
@@ -30,18 +36,19 @@ function splitLyrics(rawLyrics) {
             }
         }
     })
-    var tempLyricObject = {
-        sectionHeader: tempSectionHeader,
-        sectionBody: tempSectionBody,
+    // Push final object i.e. last verse
+    sectionTitles.push(tempSectionHeader);
+    boxTexts.push(splitToWords(tempSectionBody));
+    const tempObject = {
+        sectionTitles: sectionTitles,
+        boxTexts: boxTexts,
     }
-    lyricSections.push(tempLyricObject);
-    return lyricSections;
+    return tempObject;
 }
 
 router.get('/', async function(req, res, next){
     
-    var allLyrics;
-    var lyricSections;
+    var formattedLyrics;
     const options = {
         apiKey: "oeBPMjEoWIOh1j2b-3uumALkHe5TBSwP587u94-rEhafeXq1JWiGNtO6fxU_cBJJ",
         title: "Lover",
@@ -52,13 +59,12 @@ router.get('/', async function(req, res, next){
         //console.log("1." + rawLyrics);
         rawLyrics = rawLyrics.split("\n").join(" ").split("-").join(" ");
         rawLyrics = rawLyrics.replaceAll(',', '').replaceAll('"', '').replaceAll('\\', '').replaceAll('(', '').replaceAll(')', '').replaceAll("'", '');
-        allLyrics = rawLyrics;
-        lyricSections = splitLyrics(allLyrics);
+        formattedLyrics = splitSections(rawLyrics);
     }).catch(err => {
         console.log(err);
     });
 
-    return res.json({data: lyricSections});
+    return res.json({data: formattedLyrics});
 })
 
 module.exports = router;

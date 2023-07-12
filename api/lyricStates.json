@@ -1,0 +1,1328 @@
+[
+    {
+        "sectionIndex": 0,
+        "sectionTitle": "Verse 1",
+        "boxesInfo": [
+            {
+                "boxIndex": 0,
+                "boxText": "we",
+                "boxState": 1
+            },
+            {
+                "boxIndex": 1,
+                "boxText": "could",
+                "boxState": 2
+            },
+            {
+                "boxIndex": 2,
+                "boxText": "leave",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 3,
+                "boxText": "the",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 4,
+                "boxText": "christmas",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 5,
+                "boxText": "lights",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 6,
+                "boxText": "up",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 7,
+                "boxText": "til",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 8,
+                "boxText": "january",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 9,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 10,
+                "boxText": "this",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 11,
+                "boxText": "is",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 12,
+                "boxText": "our",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 13,
+                "boxText": "place",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 14,
+                "boxText": "we",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 15,
+                "boxText": "make",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 16,
+                "boxText": "the",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 17,
+                "boxText": "rules",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 18,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 19,
+                "boxText": "theres",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 20,
+                "boxText": "a",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 21,
+                "boxText": "dazzling",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 22,
+                "boxText": "haze",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 23,
+                "boxText": "a",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 24,
+                "boxText": "mysterious",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 25,
+                "boxText": "way",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 26,
+                "boxText": "about",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 27,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 28,
+                "boxText": "dear",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 29,
+                "boxText": "have",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 30,
+                "boxText": "i",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 31,
+                "boxText": "known",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 32,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 33,
+                "boxText": "twenty",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 34,
+                "boxText": "seconds",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 35,
+                "boxText": "or",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 36,
+                "boxText": "twenty",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 37,
+                "boxText": "years?",
+                "boxState": 0
+            }
+        ]
+    },
+    {
+        "sectionIndex": 1,
+        "sectionTitle": "Chorus",
+        "boxesInfo": [
+            {
+                "boxIndex": 0,
+                "boxText": "can",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 1,
+                "boxText": "i",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 2,
+                "boxText": "go",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 3,
+                "boxText": "where",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 4,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 5,
+                "boxText": "go?",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 6,
+                "boxText": "can",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 7,
+                "boxText": "we",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 8,
+                "boxText": "always",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 9,
+                "boxText": "be",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 10,
+                "boxText": "this",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 11,
+                "boxText": "close?",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 12,
+                "boxText": "forever",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 13,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 14,
+                "boxText": "ever",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 15,
+                "boxText": "ah",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 16,
+                "boxText": "take",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 17,
+                "boxText": "me",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 18,
+                "boxText": "out",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 19,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 20,
+                "boxText": "take",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 21,
+                "boxText": "me",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 22,
+                "boxText": "home",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 23,
+                "boxText": "youre",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 24,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 25,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 26,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 27,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 28,
+                "boxText": "lover",
+                "boxState": 0
+            }
+        ]
+    },
+    {
+        "sectionIndex": 2,
+        "sectionTitle": "Verse 2",
+        "boxesInfo": [
+            {
+                "boxIndex": 0,
+                "boxText": "we",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 1,
+                "boxText": "could",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 2,
+                "boxText": "let",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 3,
+                "boxText": "our",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 4,
+                "boxText": "friends",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 5,
+                "boxText": "crash",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 6,
+                "boxText": "in",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 7,
+                "boxText": "the",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 8,
+                "boxText": "living",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 9,
+                "boxText": "room",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 10,
+                "boxText": "this",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 11,
+                "boxText": "is",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 12,
+                "boxText": "our",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 13,
+                "boxText": "place",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 14,
+                "boxText": "we",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 15,
+                "boxText": "make",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 16,
+                "boxText": "the",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 17,
+                "boxText": "call",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 18,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 19,
+                "boxText": "im",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 20,
+                "boxText": "highly",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 21,
+                "boxText": "suspicious",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 22,
+                "boxText": "that",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 23,
+                "boxText": "everyone",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 24,
+                "boxText": "who",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 25,
+                "boxText": "sees",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 26,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 27,
+                "boxText": "wants",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 28,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 29,
+                "boxText": "ive",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 30,
+                "boxText": "loved",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 31,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 32,
+                "boxText": "three",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 33,
+                "boxText": "summers",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 34,
+                "boxText": "now",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 35,
+                "boxText": "honey",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 36,
+                "boxText": "but",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 37,
+                "boxText": "i",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 38,
+                "boxText": "want",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 39,
+                "boxText": "em",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 40,
+                "boxText": "all",
+                "boxState": 0
+            }
+        ]
+    },
+    {
+        "sectionIndex": 3,
+        "sectionTitle": "Chorus",
+        "boxesInfo": [
+            {
+                "boxIndex": 0,
+                "boxText": "can",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 1,
+                "boxText": "i",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 2,
+                "boxText": "go",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 3,
+                "boxText": "where",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 4,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 5,
+                "boxText": "go?",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 6,
+                "boxText": "can",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 7,
+                "boxText": "we",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 8,
+                "boxText": "always",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 9,
+                "boxText": "be",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 10,
+                "boxText": "this",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 11,
+                "boxText": "close?",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 12,
+                "boxText": "forever",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 13,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 14,
+                "boxText": "ever",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 15,
+                "boxText": "ah",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 16,
+                "boxText": "take",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 17,
+                "boxText": "me",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 18,
+                "boxText": "out",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 19,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 20,
+                "boxText": "take",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 21,
+                "boxText": "me",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 22,
+                "boxText": "home",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 23,
+                "boxText": "forever",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 24,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 25,
+                "boxText": "ever",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 26,
+                "boxText": "youre",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 27,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 28,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 29,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 30,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 31,
+                "boxText": "lover",
+                "boxState": 0
+            }
+        ]
+    },
+    {
+        "sectionIndex": 4,
+        "sectionTitle": "Bridge",
+        "boxesInfo": [
+            {
+                "boxIndex": 0,
+                "boxText": "ladies",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 1,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 2,
+                "boxText": "gentlemen",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 3,
+                "boxText": "will",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 4,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 5,
+                "boxText": "please",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 6,
+                "boxText": "stand?",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 7,
+                "boxText": "with",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 8,
+                "boxText": "every",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 9,
+                "boxText": "guitar",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 10,
+                "boxText": "string",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 11,
+                "boxText": "scar",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 12,
+                "boxText": "on",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 13,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 14,
+                "boxText": "hand",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 15,
+                "boxText": "i",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 16,
+                "boxText": "take",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 17,
+                "boxText": "this",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 18,
+                "boxText": "magnetic",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 19,
+                "boxText": "force",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 20,
+                "boxText": "of",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 21,
+                "boxText": "a",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 22,
+                "boxText": "man",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 23,
+                "boxText": "to",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 24,
+                "boxText": "be",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 25,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 26,
+                "boxText": "lover",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 27,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 28,
+                "boxText": "hearts",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 29,
+                "boxText": "been",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 30,
+                "boxText": "borrowed",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 31,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 32,
+                "boxText": "yours",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 33,
+                "boxText": "has",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 34,
+                "boxText": "been",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 35,
+                "boxText": "blue",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 36,
+                "boxText": "alls",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 37,
+                "boxText": "well",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 38,
+                "boxText": "that",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 39,
+                "boxText": "ends",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 40,
+                "boxText": "well",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 41,
+                "boxText": "to",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 42,
+                "boxText": "end",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 43,
+                "boxText": "up",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 44,
+                "boxText": "with",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 45,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 46,
+                "boxText": "swear",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 47,
+                "boxText": "to",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 48,
+                "boxText": "be",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 49,
+                "boxText": "overdramatic",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 50,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 51,
+                "boxText": "true",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 52,
+                "boxText": "to",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 53,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 54,
+                "boxText": "lover",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 55,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 56,
+                "boxText": "youll",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 57,
+                "boxText": "save",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 58,
+                "boxText": "all",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 59,
+                "boxText": "your",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 60,
+                "boxText": "dirtiest",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 61,
+                "boxText": "jokes",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 62,
+                "boxText": "for",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 63,
+                "boxText": "me",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 64,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 65,
+                "boxText": "at",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 66,
+                "boxText": "every",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 67,
+                "boxText": "table",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 68,
+                "boxText": "ill",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 69,
+                "boxText": "save",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 70,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 71,
+                "boxText": "a",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 72,
+                "boxText": "seat",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 73,
+                "boxText": "lover",
+                "boxState": 0
+            }
+        ]
+    },
+    {
+        "sectionIndex": 5,
+        "sectionTitle": "Chorus",
+        "boxesInfo": [
+            {
+                "boxIndex": 0,
+                "boxText": "can",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 1,
+                "boxText": "i",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 2,
+                "boxText": "go",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 3,
+                "boxText": "where",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 4,
+                "boxText": "you",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 5,
+                "boxText": "go?",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 6,
+                "boxText": "can",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 7,
+                "boxText": "we",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 8,
+                "boxText": "always",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 9,
+                "boxText": "be",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 10,
+                "boxText": "this",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 11,
+                "boxText": "close?",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 12,
+                "boxText": "forever",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 13,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 14,
+                "boxText": "ever",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 15,
+                "boxText": "ah",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 16,
+                "boxText": "take",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 17,
+                "boxText": "me",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 18,
+                "boxText": "out",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 19,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 20,
+                "boxText": "take",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 21,
+                "boxText": "me",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 22,
+                "boxText": "home",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 23,
+                "boxText": "forever",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 24,
+                "boxText": "and",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 25,
+                "boxText": "ever",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 26,
+                "boxText": "youre",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 27,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 28,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 29,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 30,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 31,
+                "boxText": "oh",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 32,
+                "boxText": "youre",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 33,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 34,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 35,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 36,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 37,
+                "boxText": "darling",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 38,
+                "boxText": "youre",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 39,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 40,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 41,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 42,
+                "boxText": "my",
+                "boxState": 0
+            },
+            {
+                "boxIndex": 43,
+                "boxText": "lover",
+                "boxState": 0
+            }
+        ]
+    }
+]
