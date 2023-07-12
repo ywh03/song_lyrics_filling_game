@@ -1,0 +1,33 @@
+.body {
+    font-family: 'Times New Roman';
+}
+
+.lyrics-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+}
+
+.lyrics-section-header {
+    display: block;
+    color: black;
+}
+
+.lyric-box {
+    width: 100px;
+    height: 20px;
+    border: black 1px;
+}
+
+.lyric-box-unfilled {
+    background-color: orange;
+    font-size: 0px;
+}
+
+.lyric-box-filled {
+    background-color: aliceblue;
+    font-size: 17px;
+}
+
