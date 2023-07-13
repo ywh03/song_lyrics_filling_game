@@ -10,6 +10,7 @@ var usersRouter = require('./routes/users');
 var lyricsRouter = require('./routes/lyrics');
 var initRouter = require('./routes/stateInitialiser');
 var stateRouter = require('./routes/stateManager');
+var wordRouter = require('./routes/wordChecker');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/users', usersRouter);
 app.use('/lyrics', lyricsRouter);
 app.use('/init', initRouter);
 app.use('/state', stateRouter);
+app.use('/word', wordRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

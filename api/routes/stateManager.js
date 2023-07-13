@@ -16,7 +16,8 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-    const {sectionNo, boxNo, newState} = req.body;
+    //const {sectionNo, boxNo, newState} = req.body;
+    const updateData = req.body;
     let stateData;
     fs.readFile('lyricStates.json', 'utf-8', (err, data) => {
         if (err) {
@@ -24,9 +25,10 @@ router.post("/", function(req, res) {
             res.json({"Error": err});
         } else {
             stateData = JSON.parse(data.toString());
-            console.log(stateData);
-            stateData[sectionNo].boxesInfo[boxNo].boxState = newState;
-            console.log(stateData);
+            updateData.forEach((data) => {
+                stateData[data.sectionIndex].boxesInfo[data.boxIndex].boxState = data.state;
+            })
+            //stateData[sectionNo].boxesInfo[boxNo].boxState = newState;
             const stringStateData = JSON.stringify(stateData, null, 4);
             fs.writeFile('lyricStates.json', stringStateData, error => {
                 if (error) {

@@ -47,18 +47,20 @@ function splitSections(rawLyrics) {
 }
 
 router.get('/', async function(req, res, next){
+
+    const {songName, songArtist} = req.query;
     
     var formattedLyrics;
     const options = {
         apiKey: "oeBPMjEoWIOh1j2b-3uumALkHe5TBSwP587u94-rEhafeXq1JWiGNtO6fxU_cBJJ",
-        title: "Lover",
-        artist: "Taylor Swift",
+        title: songName,
+        artist: songArtist,
         optimizeQuery: true,
     };
     await lyrics.getLyrics(options).then((rawLyrics) => {
         //console.log("1." + rawLyrics);
         rawLyrics = rawLyrics.split("\n").join(" ").split("-").join(" ");
-        rawLyrics = rawLyrics.replaceAll(',', '').replaceAll('"', '').replaceAll('\\', '').replaceAll('(', '').replaceAll(')', '').replaceAll("'", '');
+        rawLyrics = rawLyrics.replaceAll(',', '').replaceAll('"', '').replaceAll('\\', '').replaceAll('(', '').replaceAll(')', '').replaceAll("'", '').replaceAll("?", '').replaceAll("!", '');
         formattedLyrics = splitSections(rawLyrics);
     }).catch(err => {
         console.log(err);
