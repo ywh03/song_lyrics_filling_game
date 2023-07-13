@@ -7,9 +7,9 @@ router.get("/", function(req, res) {
         if (err) {
             console.log(err);
         } else {
-            console.log(data);
+            //console.log(data);
             const stateData = JSON.parse(data.toString());
-            console.log("JSON data successfully read.");
+            //console.log("JSON data successfully read.");
             res.json(stateData);
         }
     })

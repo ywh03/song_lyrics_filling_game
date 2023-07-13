@@ -28,6 +28,11 @@ export default function SongSearch(props) {
             const response = await axios.post('http://localhost:9000/init', rawLyrics.data);
             console.log(response);
             props.setLyricStateData(response.data.data);
+            let tempCount = 0;
+            response.data.data.forEach((section) => {
+                tempCount += section.boxesInfo.length;
+            })
+            props.setTotalBoxes(tempCount);
         } catch (err) {
             console.log(err);
         }

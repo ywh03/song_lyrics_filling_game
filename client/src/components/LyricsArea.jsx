@@ -4,9 +4,11 @@ import LyricsSection from "./LyricsSection";
 import _ from "lodash";
 import LyricInputArea from "./LyricInputArea";
 import SongSearch from "./SongSearch";
+import CompletionDisplay from "./CompletionDisplay";
 
 function LyricsArea() {
 
+    const [totalBoxes, setTotalBoxes] = React.useState();
     const [lyricStateData, setLyricStateData] = React.useState([]);
     const [currentInput, setCurrentInput] = React.useState("");
 
@@ -22,13 +24,20 @@ function LyricsArea() {
                 console.log(rawLyrics.data.data);
                 const response = await axios.post('http://localhost:9000/init', rawLyrics.data);
                 console.log(response);
-                setLyricStateData(response.data.data);
+                setLyricStateData(response.data.data)
+                let tempCount = 0;
+                response.data.data.forEach((section) => {
+                    tempCount += section.boxesInfo.length;
+                })
+                setTotalBoxes(tempCount);
             } catch (err) {
                 console.log(err);
             }
         }
         fetchData();
     }, []);
+
+    
 
     
     async function checkForWord(event) {
@@ -77,6 +86,7 @@ function LyricsArea() {
     return (
         <div>
             <LyricInputArea checkForWord={checkForWord} currentInput={currentInput} giveUp={giveUp} />
+            <CompletionDisplay lyricStateData={lyricStateData} totalBoxes={totalBoxes} />
             <div id="lyrics-area">
                 {
                     lyricStateData?.map(function(section, index) {
@@ -87,7 +97,7 @@ function LyricsArea() {
                     })
                 }
             </div>
-            <SongSearch setLyricStateData={setLyricStateData} />
+            <SongSearch setLyricStateData={setLyricStateData} setTotalBoxes={setTotalBoxes} />
         </div>
     )
     

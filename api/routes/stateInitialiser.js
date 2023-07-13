@@ -27,7 +27,7 @@ router.post("/", function(req, res) {
             console.log(err);
             res.json({"Error": err});
         } else {
-            console.log("JSON data is saved.");
+            //console.log("JSON data is saved.");
             res.json({"Success": "JSON data is saved.", "data": lyricInfo});
         }
     })

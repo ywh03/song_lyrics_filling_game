@@ -3,7 +3,6 @@ const router = express.Router();
 const fs = require('fs');
 
 function checkForWord(word, data) {
-    console.log(data);
     let matchingWords = [];
     data.forEach((section) => {
         section.boxesInfo.forEach((box) => {
@@ -21,7 +20,7 @@ function checkForWord(word, data) {
 
 router.post("/", function(req, res) {
     const {word} = req.body;
-    console.log(word);
+    //console.log(word);
     const processedWord = word.replace("'", '').toLowerCase();
     let stateData;
     // Read lyricStates.json file
@@ -30,7 +29,7 @@ router.post("/", function(req, res) {
             console.log(err);
         } else {
             stateData = JSON.parse(data.toString());
-            console.log("JSON data successfully read.");
+            //console.log("JSON data successfully read.");
             const matchingWords = checkForWord(processedWord, stateData);
             if (matchingWords.length === 0) {
                 res.json({});
