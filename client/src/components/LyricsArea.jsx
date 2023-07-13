@@ -60,11 +60,23 @@ function LyricsArea() {
         console.log(event.target.value);
         setLyricStateData(tempObject);
     }
+
+    function giveUp() {
+        let tempObject = [...lyricStateData];
+        tempObject.forEach((section) => {
+            section.boxesInfo.forEach((box) => {
+                if(box.boxState === 0){
+                    box.boxState = 3;
+                }
+            })
+        })
+        setLyricStateData(tempObject);
+    }
     
 
     return (
         <div>
-            <LyricInputArea checkForWord={checkForWord} currentInput={currentInput} />
+            <LyricInputArea checkForWord={checkForWord} currentInput={currentInput} giveUp={giveUp} />
             <div id="lyrics-area">
                 {
                     lyricStateData?.map(function(section, index) {

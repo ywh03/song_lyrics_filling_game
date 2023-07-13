@@ -5,6 +5,7 @@ export default function LyricInputArea(props) {
         <div id="input-area">
             <h2>Enter your word here!</h2>
             <input type="text" id="inputWord" onChange={props.checkForWord} value={props.currentInput} />
+            <button onClick={props.giveUp}>Give Up</button>
         </div>
     )
 }
