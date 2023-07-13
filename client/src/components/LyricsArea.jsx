@@ -48,6 +48,12 @@ function LyricsArea() {
         }
     }
 
+    function revealWord(sectionIndex, boxIndex) {
+        let tempObject = [...lyricStateData];
+        tempObject[sectionIndex].boxesInfo[boxIndex].boxState = 2;
+        setLyricStateData(tempObject);
+    }
+
     function testState(event) {
         let tempObject = [...lyricStateData];
         tempObject[0].boxesInfo[0].boxState = 1;
@@ -64,7 +70,7 @@ function LyricsArea() {
                     lyricStateData?.map(function(section, index) {
                         return (
                             //<div></div>
-                            <LyricsSection key={section.sectionIndex} sectionTitle={section.sectionTitle} sectionIndex={section.sectionIndex} sectionBoxes={section.boxesInfo} allData={lyricStateData} />
+                            <LyricsSection key={section.sectionIndex} sectionTitle={section.sectionTitle} sectionIndex={section.sectionIndex} sectionBoxes={section.boxesInfo} allData={lyricStateData} revealWord={revealWord} />
                         )
                     })
                 }

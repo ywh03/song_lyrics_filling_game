@@ -10,7 +10,7 @@ export default function LyricsSection(props) {
                 {props.sectionBoxes?.map(function(boxInfo, index) {
                         return (
                             <div>
-                                <LyricBox key={boxInfo.boxIndex} boxInfo={boxInfo} />
+                                <LyricBox key={boxInfo.boxIndex} boxInfo={boxInfo} sectionIndex={props.sectionIndex} revealWord={props.revealWord} />
                             </div>
                         )
                     })
