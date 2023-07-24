@@ -99,7 +99,9 @@ function LyricsArea() {
                 <CompletionDisplay className="header-item" lyricStateData={lyricStateData} totalBoxes={totalBoxes} />
             </div>
             {isLoading ?  
-                <h1>Loading...</h1> : (
+                <div class="loading">
+                    <h1>Loading...</h1>
+                </div> : (
             <div id="lyrics-area">
                 {
                     lyricStateData?.map(function(section, index) {

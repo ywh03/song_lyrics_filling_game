@@ -39,9 +39,9 @@ export default function Timer(props) {
     return (
         <div>
             <Countdown key={0} ref={countdownApiRef} date={props.timeEnd} renderer={renderer} />
-            <button onClick={startTimer}>Start</button>
-            <button onClick={pauseTimer}>Pause</button>
-            <button onClick={resetTimer}>Reset</button>
+            <button className="btn btn-success" onClick={startTimer}>Start</button>
+            <button className="btn btn-warning" onClick={pauseTimer}>Pause</button>
+            <button className="btn btn-danger" onClick={resetTimer}>Reset</button>
         </div>
     )
 }

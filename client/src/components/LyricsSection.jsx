@@ -6,7 +6,7 @@ export default function LyricsSection(props) {
     return (
         <div>
             <h2 key={props.sectionIndex} className="lyrics-section-header">{props.sectionTitle}</h2>
-            <div className="lyrics-section">
+            <div className="lyric-section">
                 {props.sectionBoxes?.map(function(boxInfo, index) {
                         return (
                             <div>

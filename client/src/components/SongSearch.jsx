@@ -41,11 +41,11 @@ export default function SongSearch(props) {
     }
 
     return (
-        <div>
+        <div id="song-search">
             <h2>Search for a Song here!</h2>
             <input type="text" id="songName" placeholder="Song Name" onChange={updateSongName} value={songName} />
             <input type="text" id="songArtist" placeholder="Artist Name" onChange={updateSongArtist} value={songArtist} />
-            <button onClick={searchAndEmplace} >Search</button>
+            <button className="btn btn-primary" onClick={searchAndEmplace} >Search</button>
         </div>
     );
 }

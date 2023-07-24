@@ -2,17 +2,26 @@
     font-family: 'Times New Roman';
 }
 
-.lyrics-section {
+.lyric-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
     text-align: center;
+    padding: 2% 0;
 }
 
 .lyrics-section-header {
     display: block;
     color: black;
+}
+
+#lyrics-area {
+    padding: 5%;
+}
+
+#song-search {
+    padding: 5%;
 }
 
 .lyric-box {
@@ -43,7 +52,7 @@
 
 #header {
     background-color: lightblue;
-    padding: 2% 3%;
+    padding: 2% 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,3 +62,18 @@
     flex-basis: auto;
 }
 
+.loading {
+    padding: 5%;
+}
+
+#song-search input {
+    margin: 1% 1.5% 0 0;
+}
+
+.btn {
+    margin: 0 3%;
+}
+
+.lyric-input {
+    width: 60%;
+}
