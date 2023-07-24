@@ -17,7 +17,7 @@
 
 .lyric-box {
     width: 100px;
-    height: 20px;
+    height: 25px;
     border: black 1px;
 }
 
@@ -37,7 +37,19 @@
 }
 
 .lyric-box-giveup {
-    background-color: red;
+    background-color: #ed685f;
     font-size: 17px;
+}
+
+#header {
+    background-color: lightblue;
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-item {
+    flex-basis: auto;
 }
 

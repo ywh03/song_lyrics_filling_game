@@ -17,6 +17,7 @@ export default function SongSearch(props) {
     }
 
     async function searchAndEmplace() {
+        props.setLoading(true);
         try {
             const rawLyrics = await axios.get('http://localhost:9000/lyrics', {
                 params: {
@@ -36,6 +37,7 @@ export default function SongSearch(props) {
         } catch (err) {
             console.log(err);
         }
+        props.setLoading(false);
     }
 
     return (

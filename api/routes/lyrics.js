@@ -3,7 +3,7 @@ var router = express.Router();
 var lyrics = require('genius-lyrics-api');
 
 function splitToWords(verse) {
-    console.log(verse);
+    // console.log(verse);
     let tempArray = verse.split(/\s+/);
     tempArray.map(function(lyric) {
         return lyric.trim();

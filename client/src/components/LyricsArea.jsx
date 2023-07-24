@@ -5,13 +5,18 @@ import _ from "lodash";
 import LyricInputArea from "./LyricInputArea";
 import SongSearch from "./SongSearch";
 import CompletionDisplay from "./CompletionDisplay";
+import Timer from "./Timer";
 
 function LyricsArea() {
 
     const [totalBoxes, setTotalBoxes] = React.useState();
     const [lyricStateData, setLyricStateData] = React.useState([]);
     const [currentInput, setCurrentInput] = React.useState("");
+    const [hasStarted, setStarted] = React.useState(false);
+    const [timeEnd, setTimeEnd] = React.useState(Date.now() + 300000)
+    const [isLoading, setLoading] = React.useState(false);
 
+    /*
     React.useEffect(() => {
         async function fetchData() {
             try {
@@ -36,10 +41,8 @@ function LyricsArea() {
         }
         fetchData();
     }, []);
+    */
 
-    
-
-    
     async function checkForWord(event) {
         setCurrentInput(event.target.value);
         const response = await axios.post('http://localhost:9000/word', {"word": event.target.value});
@@ -50,17 +53,21 @@ function LyricsArea() {
             axios.post('http://localhost:9000/state', response.data);
             setCurrentInput("");
             let tempObject = [...lyricStateData];
-            response.data.forEach((box) => {
-                tempObject[box.sectionIndex].boxesInfo[box.boxIndex].boxState = box.state;
-            })
+            if (response.data.length > 0) {
+                response.data.forEach((box) => {
+                    tempObject[box.sectionIndex].boxesInfo[box.boxIndex].boxState = box.state;
+                })
+            }
             setLyricStateData(tempObject);
         }
     }
 
     function revealWord(sectionIndex, boxIndex) {
-        let tempObject = [...lyricStateData];
-        tempObject[sectionIndex].boxesInfo[boxIndex].boxState = 2;
-        setLyricStateData(tempObject);
+        if (hasStarted === true) {
+            let tempObject = [...lyricStateData];
+            tempObject[sectionIndex].boxesInfo[boxIndex].boxState = 2;
+            setLyricStateData(tempObject);
+        }
     }
 
     function testState(event) {
@@ -71,6 +78,7 @@ function LyricsArea() {
     }
 
     function giveUp() {
+        setStarted(false);
         let tempObject = [...lyricStateData];
         tempObject.forEach((section) => {
             section.boxesInfo.forEach((box) => {
@@ -80,13 +88,18 @@ function LyricsArea() {
             })
         })
         setLyricStateData(tempObject);
+        setTimeEnd(Date.now())
     }
     
-
     return (
         <div>
-            <LyricInputArea checkForWord={checkForWord} currentInput={currentInput} giveUp={giveUp} />
-            <CompletionDisplay lyricStateData={lyricStateData} totalBoxes={totalBoxes} />
+            <div id="header" className="sticky-top">
+                <LyricInputArea className="header-item" checkForWord={checkForWord} currentInput={currentInput} giveUp={giveUp} hasStarted={hasStarted} />
+                <Timer hasStarted={hasStarted} setStarted={setStarted} giveUp={giveUp} timeEnd={timeEnd} setTimeEnd={setTimeEnd} />
+                <CompletionDisplay className="header-item" lyricStateData={lyricStateData} totalBoxes={totalBoxes} />
+            </div>
+            {isLoading ?  
+                <h1>Loading...</h1> : (
             <div id="lyrics-area">
                 {
                     lyricStateData?.map(function(section, index) {
@@ -97,7 +110,8 @@ function LyricsArea() {
                     })
                 }
             </div>
-            <SongSearch setLyricStateData={setLyricStateData} setTotalBoxes={setTotalBoxes} />
+                )}
+            <SongSearch setLyricStateData={setLyricStateData} setTotalBoxes={setTotalBoxes} setLoading={setLoading} />
         </div>
     )
     
