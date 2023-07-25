@@ -24,6 +24,7 @@ export default function Timer(props) {
         countdownApiRef.current.pause();
         props.setStarted(0);
         props.setTimeEnd(Date.now() + 300000);
+        props.searchAndEmplace();
     }
 
     function toggleTimer() {

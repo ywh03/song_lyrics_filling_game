@@ -21,7 +21,7 @@ function checkForWord(word, data) {
 router.post("/", function(req, res) {
     const {word} = req.body;
     //console.log(word);
-    const processedWord = word.replace("'", '').toLowerCase();
+    const processedWord = word.replace("'", '').replace(" ", "").toLowerCase();
     let stateData;
     // Read lyricStates.json file
     fs.readFile('lyricStates.json', 'utf-8', (err, data) => {

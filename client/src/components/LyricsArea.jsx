@@ -15,6 +15,8 @@ function LyricsArea() {
     const [hasStarted, setStarted] = React.useState(0); //0 not started, 1 started, 2 paused
     const [timeEnd, setTimeEnd] = React.useState(Date.now() + 300000)
     const [isLoading, setLoading] = React.useState(false);
+    const [songName, setSongName] = React.useState("");
+    const [songArtist, setSongArtist] = React.useState("");
 
     /*
     React.useEffect(() => {
@@ -76,6 +78,30 @@ function LyricsArea() {
         }
     }
 
+    async function searchAndEmplace() {
+        setLoading(true);
+        try {
+            const rawLyrics = await axios.get('http://localhost:9000/lyrics', {
+                params: {
+                    songName: songName,
+                    songArtist: songArtist
+                }
+            });
+            console.log(rawLyrics.data.data);
+            const response = await axios.post('http://localhost:9000/init', rawLyrics.data);
+            console.log(response);
+            setLyricStateData(response.data.data);
+            let tempCount = 0;
+            response.data.data.forEach((section) => {
+                tempCount += section.boxesInfo.length;
+            })
+            setTotalBoxes(tempCount);
+        } catch (err) {
+            console.log(err);
+        }
+        setLoading(false);
+    }
+
     /*
     function testState(event) {
         let tempObject = [...lyricStateData];
@@ -103,7 +129,7 @@ function LyricsArea() {
         <div>
             <div id="header" className="sticky-top">
                 <LyricInputArea className="header-item" checkForWord={checkForWord} currentInput={currentInput} giveUp={giveUp} hasStarted={hasStarted} />
-                <Timer hasStarted={hasStarted} setStarted={setStarted} giveUp={giveUp} timeEnd={timeEnd} setTimeEnd={setTimeEnd} />
+                <Timer hasStarted={hasStarted} setStarted={setStarted} giveUp={giveUp} timeEnd={timeEnd} setTimeEnd={setTimeEnd} searchAndEmplace={searchAndEmplace} />
                 <CompletionDisplay className="header-item" lyricStateData={lyricStateData} totalBoxes={totalBoxes} />
             </div>
             {isLoading ?  
@@ -121,7 +147,7 @@ function LyricsArea() {
                 }
             </div>
                 )}
-            <SongSearch setLyricStateData={setLyricStateData} setTotalBoxes={setTotalBoxes} setLoading={setLoading} />
+            <SongSearch setLyricStateData={setLyricStateData} setTotalBoxes={setTotalBoxes} setLoading={setLoading} searchAndEmplace={searchAndEmplace} songName={songName} setSongName={setSongName} songArtist={songArtist} setSongArtist={setSongArtist} />
         </div>
     )
     
