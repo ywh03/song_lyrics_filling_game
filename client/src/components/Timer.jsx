@@ -22,25 +22,27 @@ export default function Timer(props) {
 
     function resetTimer() {
         countdownApiRef.current.pause();
-        props.setStarted(false);
+        props.setStarted(0);
         props.setTimeEnd(Date.now() + 300000);
     }
 
-    function startTimer() {
-        countdownApiRef.current.start();
-        props.setStarted(true);
-    }
-
-    function pauseTimer() {
-        countdownApiRef.current.pause();
-        props.setStarted(false);
+    function toggleTimer() {
+        if (props.hasStarted === 0) {
+            countdownApiRef.current.start();
+            props.setStarted(1);
+        } else if (props.hasStarted === 1) {
+            countdownApiRef.current.pause();
+            props.setStarted(2);
+        } else {
+            countdownApiRef.current.start();
+            props.setStarted(1);
+        }
     }
 
     return (
         <div>
             <Countdown key={0} ref={countdownApiRef} date={props.timeEnd} renderer={renderer} onComplete={() => {props.giveUp()}} />
-            <button className="btn btn-success" onClick={startTimer}>Start</button>
-            <button className="btn btn-warning" onClick={pauseTimer}>Pause</button>
+            <button className={`btn ${props.hasStarted === 1 ? 'btn-warning' : 'btn-success'}`} onClick={toggleTimer}>{props.hasStarted === 0 ? "Start" : props.hasStarted === 1 ? "Pause" : 'Resume'}</button>
             <button className="btn btn-danger" onClick={resetTimer}>Reset</button>
         </div>
     )

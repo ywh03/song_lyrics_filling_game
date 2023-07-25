@@ -12,7 +12,7 @@ function LyricsArea() {
     const [totalBoxes, setTotalBoxes] = React.useState();
     const [lyricStateData, setLyricStateData] = React.useState([]);
     const [currentInput, setCurrentInput] = React.useState("");
-    const [hasStarted, setStarted] = React.useState(false);
+    const [hasStarted, setStarted] = React.useState(0); //0 not started, 1 started, 2 paused
     const [timeEnd, setTimeEnd] = React.useState(Date.now() + 300000)
     const [isLoading, setLoading] = React.useState(false);
 
@@ -63,7 +63,7 @@ function LyricsArea() {
     }
 
     function revealWord(sectionIndex, boxIndex) {
-        if (hasStarted === true) {
+        if (hasStarted === 1) {
             let tempObject = [...lyricStateData];
             tempObject[sectionIndex].boxesInfo[boxIndex].boxState = 2;
             setLyricStateData(tempObject);
@@ -76,12 +76,14 @@ function LyricsArea() {
         }
     }
 
+    /*
     function testState(event) {
         let tempObject = [...lyricStateData];
         tempObject[0].boxesInfo[0].boxState = 1;
         console.log(event.target.value);
         setLyricStateData(tempObject);
     }
+    */
 
     function giveUp() {
         let tempObject = [...lyricStateData];
