@@ -2,7 +2,7 @@ import React from "react";
 import Countdown from "react-countdown";
 
 export default function Timer(props) {
-    const countdownApiRef = React.useRef(null);
+    const countdownApiRef = React.useRef();
 
     React.useEffect(() => {
         countdownApiRef.current.pause();
@@ -14,7 +14,6 @@ export default function Timer(props) {
             formatted_seconds = `0${formatted_seconds}`;
         }
         if (completed) {
-            props.giveUp();
             return <h3>Time's Up!</h3>
         } else {
             return <h3>Time Remaining: {minutes}:{formatted_seconds}</h3>;
@@ -23,6 +22,7 @@ export default function Timer(props) {
 
     function resetTimer() {
         countdownApiRef.current.pause();
+        props.setStarted(false);
         props.setTimeEnd(Date.now() + 300000);
     }
 
@@ -38,7 +38,7 @@ export default function Timer(props) {
 
     return (
         <div>
-            <Countdown key={0} ref={countdownApiRef} date={props.timeEnd} renderer={renderer} />
+            <Countdown key={0} ref={countdownApiRef} date={props.timeEnd} renderer={renderer} onComplete={() => {props.giveUp()}} />
             <button className="btn btn-success" onClick={startTimer}>Start</button>
             <button className="btn btn-warning" onClick={pauseTimer}>Pause</button>
             <button className="btn btn-danger" onClick={resetTimer}>Reset</button>

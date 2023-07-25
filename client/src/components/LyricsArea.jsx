@@ -67,6 +67,12 @@ function LyricsArea() {
             let tempObject = [...lyricStateData];
             tempObject[sectionIndex].boxesInfo[boxIndex].boxState = 2;
             setLyricStateData(tempObject);
+            const update = [{
+                sectionIndex: sectionIndex,
+                boxIndex: boxIndex,
+                state: 2
+            }]
+            axios.post('http://localhost:9000/state', update);
         }
     }
 
@@ -78,7 +84,6 @@ function LyricsArea() {
     }
 
     function giveUp() {
-        setStarted(false);
         let tempObject = [...lyricStateData];
         tempObject.forEach((section) => {
             section.boxesInfo.forEach((box) => {
@@ -87,6 +92,7 @@ function LyricsArea() {
                 }
             })
         })
+        setStarted(false);
         setLyricStateData(tempObject);
         setTimeEnd(Date.now())
     }
@@ -99,7 +105,7 @@ function LyricsArea() {
                 <CompletionDisplay className="header-item" lyricStateData={lyricStateData} totalBoxes={totalBoxes} />
             </div>
             {isLoading ?  
-                <div class="loading">
+                <div className="loading">
                     <h1>Loading...</h1>
                 </div> : (
             <div id="lyrics-area">
